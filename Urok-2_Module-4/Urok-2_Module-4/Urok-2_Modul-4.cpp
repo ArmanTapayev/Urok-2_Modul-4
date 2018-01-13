@@ -257,15 +257,15 @@ start:
 
 			s = 0;
 
-				for (i = 1; i <= n; i++)
+			for (i = 1; i <= n; i++)
+			{
+				cin >> x;
+				while (x < 0)
 				{
-					cin >> x;
-					while (x < 0)
-					{
-						s++;
-						break;
-					}
+					s++;
+					break;
 				}
+			}
 
 			cout << endl;
 			cout << "Количество отрицательных чисел: " << s << endl;
@@ -360,13 +360,13 @@ start:
 			n = 20;//количество учеников в классе
 			val = 0;
 
-			do
-			{
-				cin >> five;
-				val = five % 5;
-				s++;
-				n--;
-			} while (five == 5 && n>0);
+				do
+				{
+					cin >> five;
+					val = five % 5;
+					s++;
+					n--;
+				} while (five == 5 && n>0);
 
 			w = int(val);
 			cout << endl;
