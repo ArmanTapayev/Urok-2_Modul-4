@@ -257,15 +257,15 @@ start:
 
 			s = 0;
 
-			for (i = 1; i <= n; i++)
-			{
-				cin >> x;
-				while (x < 0)
+				for (i = 1; i <= n; i++)
 				{
-					s++;
-					break;
+					cin >> x;
+					while (x < 0)
+					{
+						s++;
+						break;
+					}
 				}
-			}
 
 			cout << endl;
 			cout << "Количество отрицательных чисел: " << s << endl;
